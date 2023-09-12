@@ -1,0 +1,297 @@
+/* CSS Document
+
+COLORS
+dark Purple #36077B
+light Purple #A822F2
+dark Green #077B36
+light Green #22F2A8
+dark Orange #7B3607
+light Orange #F2A822
+
+*/
+
+
+
+
+/* Generic Styles */
+@font-face {
+	font-family: 'brewski';
+	src: url('media/Fonts/BrewskiTextured.ttf');
+}
+*, *:before, *:after 
+{
+	color: #A822F2;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+p
+{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+}
+h1,h2,h3,h4,h5,h6,li,a {
+	font-family: 'brewski', Arial, Helvetica, sans-serif;
+	color: #22F2A8;
+	
+}
+h1
+{
+	font-size: 3.5rem;	
+	text-shadow: 1px 2px black;
+}
+h2
+{
+	font-size: 2.5rem;
+	text-shadow: 2px 1px black;
+	margin-top: -10px; 
+}
+ul,ol 
+{
+	list-style: none;
+}
+li, a 
+{
+	font-size: 1rem;
+	text-decoration: none;
+}
+a:link,a:visited {
+    color: #F2A822
+}
+
+
+/* Header Styles */
+header 
+{
+	margin-bottom: 45px;
+}
+#headBanner
+{
+	background-image: url("media/images/banners/retroBanner.jpg");
+	/*This image was sourced from (https://elements.envato.com/80s-vintage-retro-sunset-landscape-TD4B2VJ). (https://elements.envato.com/license-terms)*/
+	background-position: center;
+	background-size: cover;
+    box-align: center;
+    width: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 75px;
+	padding-bottom: 150px;
+    text-align: center;
+    justify-content: center;
+	
+}
+#iconBox
+{
+    position: absolute;
+    left: 5px;
+	top: 5px;
+}
+#mainBannerBox
+{
+	text-align: center;
+    flex-basis: 100%;
+    padding: 25px 15px;
+}
+#topTitle
+{
+	width: 250px;
+	margin: 0 auto;
+	border-bottom: solid 3px #077B36;
+}
+#mainNavList 
+{
+	
+	width: 100%;
+	text-align: center;
+	justify-content: space-evenly;
+}
+#mainNavList li a:hover, #mainNavList li a:active 
+{
+	color: #36077B;	
+}
+#mainNavList li:hover, #mainNavList li:active 
+{
+	background-color: #F2A822;
+	
+}
+.mainNavItem
+{	
+	background-color:#077B36;
+	flex: 1;
+	padding: 10px 0;
+	margin: 0;
+}
+.mainNavItem a 
+{
+	color: #A822F2;
+	padding: 10px 38%;
+	margin: 0;
+}
+#mainNavItem2 
+{
+	position: relative;
+	background-color: #36077B;
+	
+}
+#mainNavItem2 a
+{
+	color: #22F2A8;
+}
+#dropNavList
+{
+	display: none;
+}
+
+/* Main Section Styles */
+#container
+{
+  	width: 80%;
+  	margin: 35px auto;
+  	text-align: center;
+}
+
+/* Index Styles */
+#pageIntro 
+{
+	width: 80%;
+	margin: auto;
+}
+#pageIntro p
+{
+	margin-top: 12px
+}
+#indexOptions
+{
+  	margin: 45px 0px;
+  	justify-content: space-evenly;
+}
+.inOpBox
+{
+  	margin: 12px auto;
+  	flex-basis: 30%;
+  	border: 1px solid #36077B;
+  	box-shadow: 3px 6px #36077B;
+	border-radius: 15px;
+}
+.inOpBox div 
+{
+	padding: 15px 10px; 
+}
+.inOpBox img
+{
+	border-radius: 15px;
+}
+.inOpBox h4
+{
+	font-size: 1.8rem;
+}
+.inOpBox p
+{
+	margin: 3px;
+	text-align: left;
+}
+.inOpBox:hover  
+{
+	background-color: #F2A822;
+}
+.inOpBox:hover h4
+{
+	color: #077B36;
+}
+.inOpBox:hover p
+{
+	color: #36077B;
+}
+
+/* aboutme styles */
+#comingSoon
+{
+	padding: 20px;
+	text-align: center;
+}
+.inOpBox #comingSoon p 
+{
+	text-align: center;
+}
+
+/* Footer Styles */
+footer
+{
+	width: 100%;
+	height: 200px;
+	background-color: #36077B;
+}
+footer h5
+{
+	font-size: 1.6rem;
+}
+footer ul li 
+{
+	margin-top: 3px; 
+}
+#footText 
+{
+	width: 100%;
+	text-align: center;
+}
+#footerIconList
+{
+	display: flex;
+	justify-content: center;
+}
+.footerListItem{
+	margin: 15px;
+}
+
+/* For Screens larger Than 750px */
+@media screen and (min-width: 1250px) {
+	.flexContainer
+	{
+    	display: flex;
+	}
+	/* header styles */
+	#headBanner 
+	{
+		background-position-y: 1px;
+	}
+	
+	#dropNavList
+	{
+		background-color: #077B36;
+		width: 250px;
+		margin: 10px auto;
+		position: absolute;
+	}
+	#dropNavList 
+	{
+		width: 100%;
+	}
+	#dropNavItem1, #dropNavItem3 
+	{
+		background-color: #36077B;
+	}
+	#mainNavItem2:hover #dropNavList 
+	{
+		display: block;
+	}
+	.dropNavItem
+	{
+		padding: 10px 0;
+	}
+	.dropNavItem a
+	{
+		padding: 10px 40%;
+	}
+
+	/* index styles */
+	.inOpBox 
+	{
+		margin: 6px 14px;
+		box-shadow: 5px 10px #36077B;
+	}
+	
+}
+
+
+/*This image was sourced from (https://elements.envato.com/80s-vintage-retro-sunset-landscape-TD4B2VJ). (https://elements.envato.com/license-terms)*/
